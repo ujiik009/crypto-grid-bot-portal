@@ -1,6 +1,27 @@
 # crypto-grid-bot-portal
 user interface for manage they bot develop by react js
 
+# Before Development have to config vscode for typescript first
+## Adding TSLint
+
+```bash
+npm install tslint tslint-react --save-dev
+```
+Let’s configure TSLint by adding a file called tslint.json at the same level as package.json with the following content:
+
+```json
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
